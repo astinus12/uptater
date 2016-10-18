@@ -15,6 +15,7 @@ echo ${bold}"Updating git repos..."${normal}
 cd /Users/wnovak/Documents/git/fabric; git pull & wait
 cd /Users/wnovak/Documents/git/serverspec; git pull & wait
 cd /Users/wnovak/Documents/git/bac; git pull & wait
+cd /Users/wnovak/Documents/Scripts/git/uptater; git pull & wait
 echo
 echo ${bold}"Updating svn repos..."${normal}
 cd /Users/wnovak/Documents/puppet; svn up & wait
