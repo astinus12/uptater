@@ -13,7 +13,7 @@ sh $ZSH/tools/upgrade.sh
 echo
 echo ${bold}"Updating git repos..."${normal}
 cd /Users/wnovak/Documents/git
-for REPO in `ls`; do (cd "$REPO"; echo "updating" ${REPO} git pull); done;
+for REPO in `ls`; do (cd "$REPO"; echo "updating" "$REPO" git pull); done;
 cd /Users/wnovak/Documents/Scripts/git/uptater; git pull & wait
 echo
 echo ${bold}"Updating svn repos..."${normal}
