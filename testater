@@ -1,0 +1,10 @@
+#!/bin/bash
+echo ${bold}"Updating git repos..."${normal}
+repos="for dir in $(find . -name ".git")"
+echo "Checking" ${#repos[@]} "repositories for updates"
+for repo in "${repos[@]}"
+do
+  echo "updating" ${repo}
+  cd "${repo}"
+  git pull
+done
