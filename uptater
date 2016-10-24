@@ -19,7 +19,7 @@ echo
 echo ${bold}"Updating svn repos..."${normal}
 cd /Users/wnovak/Documents/puppet; svn up & wait
 echo
-echo ${bold}"OS Update..."${normal}
+echo ${bold}"OSX Update..."${normal}
 softwareupdate -i -a & wait
 wait
 echo
