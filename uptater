@@ -2,7 +2,7 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 clear
-echo ${bold}"Updating this Macbook's Development Environment:"${normal}
+echo ${bold}"Updating Development Environment:"${normal}
 echo
 echo
 echo ${bold}"Starting with Homebrew..."${normal}
@@ -19,8 +19,8 @@ echo
 echo ${bold}"Updating svn repos..."${normal}
 cd /Users/wnovak/Documents/puppet; svn up & wait
 echo
-echo ${bold}"Updating System..."${normal}
+echo ${bold}"OS Update..."${normal}
 softwareupdate -i -a & wait
 wait
 echo
-echo ${bold}Complete${normal}
+echo ${bold}"--| Complete |--"${normal}
