@@ -4,8 +4,9 @@ normal=$(tput sgr0)
 clear
 echo ${bold}"Updating Development Environment:"${normal}
 echo
+alias uptate="sh /Users/wnovak/Documents/Scripts/git/uptater/uptater"
 echo
-echo ${bold}"Starting with Homebrew..."${normal}
+echo ${bold}"Updating Homebrew..."${normal}
 brew update;brew upgrade & wait
 echo
 echo ${bold}"Updating oh-my-zsh..."${normal}
@@ -21,6 +22,5 @@ cd /Users/wnovak/Documents/puppet; svn up & wait
 echo
 echo ${bold}"OSX Update..."${normal}
 softwareupdate -i -a & wait
-wait
 echo
-echo ${bold}"--| Complete |--"${normal}
+echo ${bold}"Complete"${normal}
