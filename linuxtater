@@ -8,6 +8,7 @@ echo
 echo ${bold}"Updating git repos..."${normal}
 cd /home/wnovak/git
 for REPO in `ls`; do (cd "$REPO"; echo "updating" "$REPO"; git pull; echo ); done
+cd /home/wnovak/Scripts/uptater; git pull
 echo
 wait
 echo ${bold}"Updating svn repos..."${normal}
