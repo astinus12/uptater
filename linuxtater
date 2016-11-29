@@ -15,5 +15,7 @@ echo ${bold}"Updating svn repos..."${normal}
 cd /home/wnovak/puppet; svn up & wait
 echo
 wait
+echo ${bold}"Updating System..."${normal}
+sudo apt-get update;sudo apt-get upgrade -y
 echo
 echo ${bold}"--| Complete |--"${normal}
