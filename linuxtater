@@ -4,6 +4,8 @@ normal=$(tput sgr0)
 clear
 echo ${bold}"Updating Development Environment:"${normal}
 echo
+echo ${bold}"Updating svn repos..."${normal}
+cd /home/wnovak/puppet; svn up & wait
 echo
 echo ${bold}"Updating git repos..."${normal}
 cd /home/wnovak/git
@@ -11,9 +13,6 @@ for REPO in `ls`; do (cd "$REPO"; echo "updating" "$REPO"; git pull; echo ); don
 cd /home/wnovak/Scripts/uptater; git pull
 echo
 wait
-echo ${bold}"Updating svn repos..."${normal}
-cd /home/wnovak/puppet; svn up & wait
-echo
 wait
 echo ${bold}"Updating System..."${normal}
 sudo apt-get update;sudo apt-get upgrade -y
